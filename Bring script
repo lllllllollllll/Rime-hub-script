@@ -343,14 +343,14 @@ local function notify(txt)
 	i6.Text=txt
 	twait(2)
 	if notifyid==thisid then
-		i6.Text="by MyWorld"
+		i6.Text="by Emir ata :D"
 	end
 end
 local bringing=false
 i5.MouseButton1Click:Connect(function()
 	if bringing then
 		bringing=false
-		i5.Text="BRING"
+		i5.Text="START"
 		return
 	end
 	if not target then
