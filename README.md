@@ -1,0 +1,1 @@
+# Rime-hub-script
