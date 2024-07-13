@@ -71,7 +71,7 @@ i1.Name=rs()
 i1.Parent=i8 
 i2.Font=e.Font.SourceSans 
 i2.FontSize=e.FontSize.Size24 
-i2.Text="FE bring gui" 
+i2.Text="FE bring gui by emr" 
 i2.TextColor=bc(1002) 
 i2.TextColor3=c3(0.815686,0.815686,0.815686) 
 i2.TextSize=20 
@@ -127,12 +127,12 @@ i5.Name=rs()
 i5.Parent=i3 
 i5.Font=e.Font.FredokaOne 
 i5.FontSize=e.FontSize.Size24 
-i5.Text="BRING" 
+i5.Text="START" 
 i5.TextColor3=c3(0.55,0.55,0.55) 
 i5.TextSize=23 
 i6.Font=e.Font.SourceSans 
 i6.FontSize=e.FontSize.Size14 
-i6.Text="by MyWorld" 
+i6.Text="by emir ata dinc :D" 
 i6.TextColor=bc(2) 
 i6.TextColor3=c3(0.635294,0.635294,0.635294) 
 i6.AnchorPoint=v2(1,1) 
@@ -370,7 +370,7 @@ i5.MouseButton1Click:Connect(function()
 		return notify("no humanoidrootpart")
 	end
 	bringing=true
-	i5.Text="bringing" 
+	i5.Text="STARTER" 
 	local from=hrp1.CFrame
 	local fromP=from.Position
 	local to=hrp.CFrame
@@ -422,7 +422,7 @@ i5.MouseButton1Click:Connect(function()
 	hrp.Velocity=v3_0
 	hrp.RotVelocity=v3_0
 	bringing=false
-	i5.Text="BRING"
+	i5.Text="START"
 end)
 local iscg,_=pcall(function()
 	i8.Parent=game:FindFirstChildOfClass("CoreGui")
@@ -430,3 +430,4 @@ end)
 if not iscg then
 	i8.Parent=lp:FindFirstChildOfClass("PlayerGui")
 end
+
