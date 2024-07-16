@@ -1,14 +1,11 @@
-if game.PlaceId ==12109643 then
 
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "RİME HUB", HidePremium = false, introtext "RİME hub opening" SaveConfig = true, ConfigFolder = "OrionTest"})
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl...)
 
-local Tab = Window:MakeTab({
-	Name = "my scripts ",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
+local Window = OrionLib:MakeWindow({Name = "RİME HUB ", HidePremium = false, introEnabled = false,introText = "RİME HUB openning"SaveConfig = true, ConfigFolder = "OrionTest"})
+
+
+-- player tab
 
 local PlayerTab = Window:MakeTab({
  Name = "Player",
@@ -47,13 +44,3 @@ PlayerTab:AddSlider({
 })
 
 
-Tab:AddButton({
-	Name = "FLY",
-	Callback = function(loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))())
-      		print("button pressed")
-  	end    
-})
-
-
-end 
-OrionLib:Init()
