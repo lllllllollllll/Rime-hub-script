@@ -1,23 +1,23 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "RİME hub",
-   LoadingTitle = "Loading RİME Hub",
-   LoadingSubtitle = "By EMỊR",
+   Name = "ALL HUB",
+   LoadingTitle = "ALL HUB",
+   LoadingSubtitle = "by EMIR",
    ConfigurationSaving = {
-      Enabled = true,
+      Enabled = false,
       FolderName = nil, -- Create a custom folder for your hub/game
-      FileName = "Player Changer"
+      FileName = "Example Hub"
    },
-
-local MainTab = Window:CreateTab("Main", nil) -- Title, Image
+   
+local MainTab = Window:CreateTab("Home", nil) -- Title, Image
 local MainSection = MainTab:CreateSection("Main")
 
 Rayfield:Notify({
-   Title = "Executed The Script Successfully",
-   Content = "A Good Script Hub",
+   Title = "You executed the script",
+   Content = "",
    Duration = 5,
-   Image = nil,
+   Image = 13047715178,
    Actions = { -- Notification Buttons
       Ignore = {
          Name = "Okay!",
@@ -29,64 +29,111 @@ Rayfield:Notify({
 })
 
 local Button = MainTab:CreateButton({
-   Name = "Infinite Yield",
+   Name = "Infinite Jump Toggle",
    Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+       --Toggles the infinite jump between on or off on every script run
+_G.infinjump = not _G.infinjump
+
+if _G.infinJumpStarted == nil then
+	--Ensures this only runs once to save resources
+	_G.infinJumpStarted = true
+	
+	--Notifies readiness
+	game.StarterGui:SetCore("SendNotification", {Title="Youtube Hub"; Text="Infinite Jump Activated!"; Duration=5;})
+
+	--The actual infinite jump
+	local plr = game:GetService('Players').LocalPlayer
+	local m = plr:GetMouse()
+	m.KeyDown:connect(function(k)
+		if _G.infinjump then
+			if k:byte() == 32 then
+			humanoid = game:GetService'Players'.LocalPlayer.Character:FindFirstChildOfClass('Humanoid')
+			humanoid:ChangeState('Jumping')
+			wait()
+			humanoid:ChangeState('Seated')
+			end
+		end
+	end)
+end
    end,
 })
 
-local Button = MainTab:CreateButton({
-   Name = "FLY",
-   Callback = function()
-    local mods = {
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
-  end,
-})
-
-local Button = MainTab:CreateButton({
-   Name = "MM2",
-   Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua", false))()
+local Slider = MainTab:CreateSlider({
+   Name = "WalkSpeed Slider",
+   Range = {1, 350},
+   Increment = 1,
+   Suffix = "Speed",
+   CurrentValue = 16,
+   Flag = "sliderws", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
    end,
 })
 
-local Button = MainTab:CreateButton({
-   Name = "SB",
-   Callback = function ()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Slap_Battles/main/Slap_Battles.lua"))()
+local Slider = MainTab:CreateSlider({
+   Name = "JumpPower Slider",
+   Range = {1, 350},
+   Increment = 1,
+   Suffix = "Speed",
+   CurrentValue = 16,
+   Flag = "sliderjp", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
    end,
 })
 
-local Button = MainTab:CreateButton({
-   Name = "BRING by me  ",
+local Dropdown = MainTab:CreateDropdown({
+   Name = "Select Area",
+   Options = {"Starter World","Pirate Island","Pineapple Paradise"},
+   CurrentOption = {"Starter World"},
+   MultipleOptions = false,
+   Flag = "dropdownarea", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Option)
+        print(Option)
+   end,
+})
+
+local Input = MainTab:CreateInput({
+   Name = "Walkspeed",
+   PlaceholderText = "1-500",
+   RemoveTextAfterFocusLost = true,
+   Callback = function(Text)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Text)
+   end,
+})
+
+local OtherSection = MainTab:CreateSection("Other")
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Auto Farm",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+        print("FARMING")
+   end,
+})
+
+local TPTab = Window:CreateTab("🏝 Teleports", nil) -- Title, Image
+
+local Button1 = TPTab:CreateButton({
+   Name = "Starter Island",
    Callback = function()
-        loadstring(game:HttpGet('https://ppearl.vercel.app'))()
+        --Teleport1
    end,
 })
 
-local Button = MainTab:CreateButton({
-   Name = "Notoriety Requiem",
+local Button2 = TPTab:CreateButton({
+   Name = "Pirate Island",
    Callback = function()
-        loadstring(game:HttpGet("https://scriptblox.com/raw/RUSH-HOUR-Notoriety-Requiem-Evolution-11364"))()
+        --Teleport2
    end,
 })
 
-local Button = MainTab:CreateButton({
-   Name = "DomainX",
+local Button3 = TPTab:CreateButton({
+   Name = "Pineapple Paradise",
    Callback = function()
-        loadstring(game:HttpGet('https://sirius.menu/domainx'))() 
+        --Teleport3
    end,
 })
 
-local Button = MainTab:CreateButton({
-   Name = "Destruction Simulator Aqua Modz",
-   Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/AquaModz/DestructionSIMModded/main/DestructionSimAqua.lua'))()
-   end,
-})
-
-local Tab = Window:CreateTab("Info", nil) -- Title, Image
-
-local Paragraph = Tab:CreateParagraph({Title = "Info", Content = "By EMỊR"})
-
-local Paragraph = Tab:CreateParagraph({Title = "Info", Content = "Discord Server : https://discord.gg/5tBNqX3Ngp"})
+local TPTab = Window:CreateTab("🎲 Misc", nil) -- Title, Image
