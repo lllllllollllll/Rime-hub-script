@@ -1,8 +1,8 @@
-
+ 
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl...)
 
-local Window = OrionLib:MakeWindow({Name = "RİME HUB ", HidePremium = false, introEnabled = false,introText = "RİME HUB openning"SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Rime Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 
 -- player tab
@@ -43,4 +43,26 @@ PlayerTab:AddSlider({
  end    
 })
 
+
+--other tab
+
+local OtherTab = Window:MakeTab({
+ Name = "Other",
+ Icon = "rbxassetid://4483345998",
+ PremiumOnly = false
+})
+
+local Section = OtherTab:AddSection({
+ Name = "Other"
+})
+
+
+OtherTab:AddButton({
+ Name = "Delete Doors",
+ Callback = function()
+       game.Workspace.Doors:Destroy()
+   end    
+})
+
+OrionLib:Init(
 
