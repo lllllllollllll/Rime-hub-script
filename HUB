@@ -62,5 +62,5 @@ OtherTab:AddButton({
    end    
 })
 
-OrionLib:Init(
+OrionLib:Init()
 
