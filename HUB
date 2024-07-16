@@ -1,6 +1,12 @@
 if game.PlaceId == 155615604 then
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "RiMe HUB", HidePremium = false, IntroText = "loading..." SaveConfig = true, ConfigFolder = "TutorialConfig"})
+local Window = OrionLib:MakeWindow({Name = "RiMe HUB", HidePremium = false, SaveConfig = true, ConfigFolder = "TutorialConfig"})
+
+local Tab = Window:MakeTab({
+	Name = "player",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 
 
 
