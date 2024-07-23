@@ -1,0 +1,47 @@
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "ALL SCRIPTS",
+    Text = "BY EMİR",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+  Duration = 10
+})
+
+ -------[OYUNLARIN BAŞLANGICI]-------------------
+ ---------[Murder mystery 2]------------
+if game.PlaceId == 142823291 then --[mm2]
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/lllllllollllll/Rime-hub-script/main/FLY"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua", false))()
+  --------[pet simulator 99]----------- 
+elseif game.PlaceId == 8737899170 then --[ps99]
+    loadstring(game:HttpGet("https://rawscripts.net/raw/18h-Pet-Simulator-99!-ZapHub-The-BEST-Auto-Farm-and-MORE-10049"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/lllllllollllll/Rime-hub-script/main/FLY"))()
+  --------[Gun fight arena]-----------
+elseif game.PlaceId == 14518422161 then --[Gunfight Arena]
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/lllllllollllll/Rime-hub-script/main/FLY"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/D8rkX/D8rk-Hub/main/Games/GunFight%20Arena",true))()
+ -------[Get huge simulator]--------- 
+elseif game.PlaceId ==  4032944086 then --[get hg Sm]
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/lllllllollllll/Rime-hub-script/main/FLY"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/borntodiekuv/KeybrewHub/main/Main"))()
+  require "socket"
+function sleep(sec)
+    socket.select(nil, nil, sec)
+end
+require "socket"
+function sleep(sec)
+    socket.select(nil, nil, sec)
+end
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "DANGER",
+    Text = "THİS SCRIPT HUB İS BROKKEN",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+  Duration = 10 
+})
+------------[Blox fruits]-----------------
+elseif game.PlaceId ==  2753915549 then --[blox fruits]
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/lllllllollllll/Rime-hub-script/main/FLY"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+  
+  
+  
+  ------------[FİNİSH]-----------------------
+end
