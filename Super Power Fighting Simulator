@@ -1,0 +1,110 @@
+if game.PlaceId == 2619187362 then 
+
+    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/thanhdat4461/OrionMoblie/main/source')))()
+    local Window = OrionLib:MakeWindow({Name = "All In One hub| Super Power Fighting Simulator", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+    
+    --values
+    _G.autoTap = true
+    _G.autoSell = true
+    _G.autoSummer = true
+    --functions
+  
+
+  function autolift()
+        while _G.autoTap == true do
+           local args = {
+    [1] = "Strength"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Train"):FireServer(unpack(args))
+
+           wait(.01)
+        end
+    end
+  
+   function autoSell()
+        while _G.autoSell == true do
+          local args = {
+    [1] = "Endurance"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Train"):FireServer(unpack(args))
+
+                     wait(.01)
+        end
+    end
+  
+  function autoSummer()
+        while _G.autoSummer == true do
+          local args = {
+    [1] = "Psychic"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Train"):FireServer(unpack(args))
+
+                     wait(.01)
+        end
+    end
+  
+  
+  
+   
+    --tablar
+  
+    local FarmTab = Window:MakeTab({
+        Name = "Farm",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+  
+    local PlayerTab = Window:MakeTab({
+        Name = "Player",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    local EggTab = Window:MakeTab({
+        Name = "Eggs",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    
+    
+    --toogleler
+    FarmTab:AddToggle({
+        Name = "Streng",
+        Default = false,
+        Callback = function(Value)
+            _G.autoTap = Value
+                autolift()
+            end
+         })
+  
+   FarmTab:AddToggle({
+        Name = "enduration",
+        Default = false,
+        Callback = function(Value)
+            _G.autoSell = Value
+                autoSell()
+            end
+         })
+   FarmTab:AddToggle({
+        Name = "pshyc",
+        Default = false,
+        Callback = function(Value)
+            _G.autoSummer = Value
+                autoSummer()
+            end
+         })
+
+
+
+
+
+
+  
+  
+
+
+end  
+
+OrionLib:Init()
