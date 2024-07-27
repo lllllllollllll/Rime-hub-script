@@ -1,14 +1,18 @@
 if game.PlaceId == 4032944086 then 
 
-    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/thanhdat4461/OrionMoblie/main/source')))()
     local Window = OrionLib:MakeWindow({Name = "All In One hub| 🦾Get Huge SM🦾", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
     
     --values
     _G.autoTap = true
     _G.autoSell = true
+    _G.autoSummer = true
+    _G.autoEbest = true
     
     --functions
-    function autolift()
+  
+
+  function autolift()
         while _G.autoTap == true do
             game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("LiftWeight"):FireServer()
             wait(.01)
@@ -21,13 +25,44 @@ if game.PlaceId == 4032944086 then
            wait(.01)
         end
     end
-    
+  
+  function autoSummer()
+        while _G.autoSummer == true do
+          game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Machines"):WaitForChild("AttemptMachineTraining"):InvokeServer()
+           wait(.01)
+        end
+    end
+  
+  function autoEbest()
+        while _G.autoEbest == true do
+          game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Pets"):WaitForChild("EquipBest"):InvokeServer()
+          game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Pets"):WaitForChild("GetEquipped"):InvokeServer()
+
+           wait(.01)
+        end
+    end
+  
+   
     --tablar
+  
     local FarmTab = Window:MakeTab({
         Name = "Farm",
         Icon = "rbxassetid://4483345998",
         PremiumOnly = false
     })
+  
+    local MiscTab = Window:MakeTab({
+        Name = "Misc",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+  
+  local EggTab = Window:MakeTab({
+        Name = "Egg",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+  
     
     --toogleler
     FarmTab:AddToggle({
@@ -47,7 +82,28 @@ if game.PlaceId == 4032944086 then
                 autoSell()
             end
          })
-    
+   FarmTab:AddToggle({
+        Name = "Auto Summer bike",
+        Default = false,
+        Callback = function(Value)
+            _G.autoSummer = Value
+                autoSummer()
+            end
+         })
+  --buttons
+  MiscTab:AddButton({
+	Name = "Equip best",
+	Callback = function(value)
+	     _G.autoEbest = value
+	      autoEbest()
+  	end    
+})
+
+
+  
+  
+
+
 end  
 
 OrionLib:Init()
