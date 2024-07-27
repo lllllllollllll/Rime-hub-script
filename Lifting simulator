@@ -1,0 +1,86 @@
+if game.PlaceId == 3652625463 then 
+    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/thanhdat4461/OrionMoblie/main/source')))()
+    local Window = OrionLib:MakeWindow({Name = "All In One hub| 🦾Liftingu SM🦾", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+    
+    --values
+    _G.autoTap = true
+    _G.autoSell = true
+    --functions
+  
+
+  function autolift()
+        while _G.autoTap == true do
+          local args = {
+    [1] = {
+        [1] = "GainMuscle"
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+           wait(.01)
+        end
+    end
+  
+   function autoSell()
+        while _G.autoSell == true do
+          local args = {
+    [1] = {
+        [1] = "SellMuscle"
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+           wait(.01)
+        end
+    end
+  
+  
+  
+  
+  
+   
+    --tablar
+  
+    local FarmTab = Window:MakeTab({
+        Name = "Farm",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+  
+  
+    
+    
+    --toogleler
+    FarmTab:AddToggle({
+        Name = "Auto Lift",
+        Default = false,
+        Callback = function(Value)
+            _G.autoTap = Value
+                autolift()
+            end
+         })
+  
+   FarmTab:AddToggle({
+        Name = "Auto sell",
+        Default = false,
+        Callback = function(Value)
+            _G.autoSell = Value
+                autoSell()
+            end
+         })
+   
+
+
+
+
+
+
+  
+  
+
+
+end  
+
+OrionLib:Init()
