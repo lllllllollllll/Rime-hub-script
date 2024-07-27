@@ -1,0 +1,53 @@
+if game.PlaceId == 4032944086 then 
+
+    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+    local Window = OrionLib:MakeWindow({Name = "All In One hub| 🦾Get Huge SM🦾", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+    
+    --values
+    _G.autoTap = true
+    _G.autoSell = true
+    
+    --functions
+    function autolift()
+        while _G.autoTap == true do
+            game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("LiftWeight"):FireServer()
+            wait(.01)
+        end
+    end
+  
+   function autoSell()
+        while _G.autoSell == true do
+          game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SellStrengthRequest"):FireServer()
+           wait(.01)
+        end
+    end
+    
+    --tablar
+    local FarmTab = Window:MakeTab({
+        Name = "Farm",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    
+    --toogleler
+    FarmTab:AddToggle({
+        Name = "Auto Lift",
+        Default = false,
+        Callback = function(Value)
+            _G.autoTap = Value
+                autolift()
+            end
+         })
+  
+   FarmTab:AddToggle({
+        Name = "Auto sell",
+        Default = false,
+        Callback = function(Value)
+            _G.autoSell = Value
+                autoSell()
+            end
+         })
+    
+end  
+
+OrionLib:Init()
